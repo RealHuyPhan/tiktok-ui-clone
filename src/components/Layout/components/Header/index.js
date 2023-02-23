@@ -66,8 +66,78 @@ const MENU_ITEMS = [
                 },
                 {
                     type: "language",
+                    code: "indo",
+                    title: "Indonesia",
+                },
+                {
+                    type: "language",
+                    code: "sing",
+                    title: "Singapore",
+                },
+                {
+                    type: "language",
                     code: "korea",
                     title: "Korea",
+                },
+                {
+                    type: "language",
+                    code: "usa",
+                    title: "USA",
+                },
+                {
+                    type: "language",
+                    code: "canada",
+                    title: "Canada",
+                },
+                {
+                    type: "language",
+                    code: "hongkong",
+                    title: "HongKong",
+                },
+                {
+                    type: "language",
+                    code: "rusia",
+                    title: "Rusia",
+                },
+                {
+                    type: "language",
+                    code: "dongitmo",
+                    title: "Dong Ti Mo",
+                },
+                {
+                    type: "language",
+                    code: "myanmar",
+                    title: "Myanmar",
+                },
+                {
+                    type: "language",
+                    code: "brunei",
+                    title: "Brunei",
+                },
+                {
+                    type: "language",
+                    code: "philipines",
+                    title: "Philipines",
+                },
+                {
+                    type: "language",
+                    code: "qatar",
+                    title: "Qatar",
+                },
+                {
+                    type: "language",
+                    code: "hungary",
+                    title: "Hungary",
+                },
+                {
+                    type: "language",
+                    code: "iran",
+                    title: "Iran",
+                },
+                {
+                    type: "language",
+                    code: "peru",
+                    title: "Peru",
                 },
             ],
         },
