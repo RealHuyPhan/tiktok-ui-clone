@@ -3,11 +3,11 @@ import { faCircleXmark, faMagnifyingGlass, faSpinner } from "@fortawesome/free-s
 import HeadlessTippy from "@tippyjs/react/headless";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Wrapper as PopperWrapper } from "~/components/Popper";
-import AccountItem from "../../AccountItem";
+import AccountItem from "../../../pages/AccountItem";
 import styles from "./Search.module.scss";
 import classNames from "classnames/bind";
 import { useDebounce } from "~/hooks";
-import * as searchServices from "../../../../utils/apiServices/searchServices";
+import * as searchServices from "~/services/searchServices";
 
 const cx = classNames.bind(styles);
 
