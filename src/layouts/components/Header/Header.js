@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss";
 import classNames from "classnames/bind";
-import Button from "~/components/Button";
+import Button from "~/components/Button/Button";
 import images from "~/asset/images";
 import Tippy from "@tippyjs/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,9 +20,9 @@ import {
     faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import "tippy.js/dist/tippy.css";
-import Menu from "~/components/Popper/Menu";
-import Image from "~/components/Image";
-import Search from "../Search";
+import Menu from "~/components/Popper/Menu/Menu";
+import Image from "~/components/Image/Image";
+import Search from "../Search/Search";
 import config from "~/config";
 
 const cx = classNames.bind(styles);

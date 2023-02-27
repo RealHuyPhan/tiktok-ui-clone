@@ -3,7 +3,7 @@ import { faCircleXmark, faMagnifyingGlass, faSpinner } from "@fortawesome/free-s
 import HeadlessTippy from "@tippyjs/react/headless";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Wrapper as PopperWrapper } from "~/components/Popper";
-import AccountItem from "../../../pages/AccountItem";
+import AccountItem from "../../../pages/AccountItem/AccountItem";
 import styles from "./Search.module.scss";
 import classNames from "classnames/bind";
 import { useDebounce } from "~/hooks";
@@ -17,24 +17,24 @@ function Search() {
     const [showResult, setShowResult] = useState(true);
     const [loading, setLoading] = useState(false);
 
-    const debounced = useDebounce(searchValue, 500);
+    const debouncedValue = useDebounce(searchValue, 500);
 
     const inputRef = useRef();
 
     useEffect(() => {
-        if (!debounced.trim()) {
+        if (!debouncedValue.trim()) {
             setSearchResult([]);
             return;
         }
 
         const fetchApi = async () => {
             setLoading(true);
-            const result = await searchServices.search(debounced);
+            const result = await searchServices.search(debouncedValue);
             setSearchResult(result);
             setLoading(false);
         };
         fetchApi();
-    }, [debounced]);
+    }, [debouncedValue]);
 
     const handleClear = () => {
         setSearchValue("");
